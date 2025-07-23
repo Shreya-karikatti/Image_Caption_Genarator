@@ -30,24 +30,11 @@ Despite the modest BLEU score, the model shows promise and can be enhanced furth
 
 ---
 
-## 📚 Literature Survey
-
-| Title | Authors | Year | Methods |
-|-------|---------|------|---------|
-| New CNN-RNN framework | Genc Hoxha et al. | 2020 | CNN + Encoder-decoder |
-| Caption based on target detection | Yan Wang et al. | 2023 | ResNet-50 + SSD |
-| Object + color recognition | Nimra et al. | 2023 | Transformer-decoder |
-| Deep neural network | Sudhakar et al. | 2022 | LSTM + VGG16 |
-| ResNet-50 and LSTM | Satish Kumar et al. | 2023 | LSTM + ResNet-50 |
-
----
-
 ## 🧠 Architecture
 
 - **Feature Extraction**: VGG16
 - **Caption Generation**: LSTM
-- **Vector Size**: 4096 (image), 256 (word embeddings)
-- **Output Layer**: Softmax (707 vocabulary size)
+<img width="1672" height="809" alt="image" src="https://github.com/user-attachments/assets/0f2d92ad-d19c-4881-ba16-ad6dde928df3" />
 
 ---
 
@@ -72,17 +59,6 @@ Despite the modest BLEU score, the model shows promise and can be enhanced furth
 
 ---
 
-## 🧪 Test Cases
-
-| Test Scenario | Input | Expected Output |
-|---------------|-------|-----------------|
-| Basic Functionality | Single Image | One accurate caption |
-| Diverse Images | Different scenes | Descriptive captions |
-| Varying Resolution | High/low res images | Consistent captions |
-| Noisy Images | Blurred/noisy input | Robust captioning |
-
----
-
 ## 💡 Conclusion
 
 This project successfully integrates CNNs and RNNs for image captioning, particularly in the tourism domain. With further improvements (e.g., attention mechanism, dataset expansion), the system can become a robust tool for travel apps, education, and tourism boards.
@@ -94,16 +70,6 @@ This project successfully integrates CNNs and RNNs for image captioning, particu
 - Integrate **attention mechanisms**
 - Use **transformer-based models**
 - Deploy as a web app with **Streamlit**
-
----
-
-## 📑 References
-
-1. Genc Hoxha et al., IEEE Xplore, 2020  
-2. Yan Wang et al., IEEE Xplore, 2023  
-3. Nimra et al., IEEE Xplore, 2023  
-4. Sudhakar et al., IEEE Xplore, 2022  
-5. Satish Kumar et al., IEEE Xplore, 2023
 
 ---
 
