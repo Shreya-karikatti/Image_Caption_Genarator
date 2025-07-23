@@ -1,20 +1,116 @@
-# Image_Caption_Genarator
-**ABSTRACT**
-Image caption generation for tourist spots involves the development of a model that can automatically generate descriptive and informative captions for images depicting various tourist attractions, landmarks, or scenic views. 
-Problem Statement: Given a dataset of images showcasing different tourist spots, the task is to develop a deep learning model that can generate accurate and contextually relevant captions describing the contents of these images.
-Input: 
-Dataset of tourist spot images (e.g., images of landmarks, natural landscapes, historical sites).
-Ground truth captions corresponding to each image, providing accurate descriptions of the depicted scene.
-Output:
-Automatically generated captions for each input image, describing the contents of the image in a descriptive and informative manner.
 
-<img width="3874" height="617" alt="image" src="https://github.com/user-attachments/assets/6d5aa5f6-2ad9-43ac-abf8-eae899876b89" />
+# 🏞️ Tourist Spot Image Caption Generator
+
+Automatically generate descriptive captions for tourist spot images using deep learning models (VGG16 + LSTM).
+
+## 📌 Abstract
+
+This project proposes a deep learning-based image captioning system for tourist attractions. It uses **VGG16** (CNN) for feature extraction and **LSTM** (RNN) for generating natural language descriptions. The system is trained on a dataset of tourist spot images, each annotated with four captions.
+
+> 📝 **BLEU Score Achieved:** 6 (baseline performance)
+
+Despite the modest BLEU score, the model shows promise and can be enhanced further with improved data and techniques such as attention mechanisms.
+
+---
+
+## 📷 Sample Output
+
+| Input Image | Generated Caption |
+|-------------|--------------------|
+| 🏰 Landmark Image | "A historic monument surrounded by greenery" |
+| 🏞️ Nature Scene | "A river flowing through the forest landscape" |
+
+---
+
+## 🎯 Objectives
+
+- Develop a model that describes tourist spots accurately.
+- Ensure captions are **semantic**, **contextual**, and **informative**.
+- Evaluate the model using metrics like BLEU, coherence, and user satisfaction.
+
+---
+
+## 📚 Literature Survey
+
+| Title | Authors | Year | Methods |
+|-------|---------|------|---------|
+| New CNN-RNN framework | Genc Hoxha et al. | 2020 | CNN + Encoder-decoder |
+| Caption based on target detection | Yan Wang et al. | 2023 | ResNet-50 + SSD |
+| Object + color recognition | Nimra et al. | 2023 | Transformer-decoder |
+| Deep neural network | Sudhakar et al. | 2022 | LSTM + VGG16 |
+| ResNet-50 and LSTM | Satish Kumar et al. | 2023 | LSTM + ResNet-50 |
+
+---
+
+## 🧠 Architecture
+
+- **Feature Extraction**: VGG16
+- **Caption Generation**: LSTM
+- **Vector Size**: 4096 (image), 256 (word embeddings)
+- **Output Layer**: Softmax (707 vocabulary size)
+
+---
+
+## 📂 Dataset
+
+- **Images**: 434 tourist spot images  
+- **Captions**: 1736 (4 per image)  
+- **Format**: Image file + Caption file  
+
+---
+
+## 🛠 Requirements
+
+### Software
+- Python
+- TensorFlow / Keras or PyTorch
+- Google Colab (recommended)
+
+### Hardware
+- 16GB RAM, 500GB SSD
+- NVIDIA GTX 1080 Ti (or higher)
+
+---
+
+## 🧪 Test Cases
+
+| Test Scenario | Input | Expected Output |
+|---------------|-------|-----------------|
+| Basic Functionality | Single Image | One accurate caption |
+| Diverse Images | Different scenes | Descriptive captions |
+| Varying Resolution | High/low res images | Consistent captions |
+| Noisy Images | Blurred/noisy input | Robust captioning |
+
+---
+
+## 💡 Conclusion
+
+This project successfully integrates CNNs and RNNs for image captioning, particularly in the tourism domain. With further improvements (e.g., attention mechanism, dataset expansion), the system can become a robust tool for travel apps, education, and tourism boards.
+
+---
+
+## 🚀 Future Scope
+
+- Integrate **attention mechanisms**
+- Use **transformer-based models**
+- Deploy as a web app with **Streamlit**
+
+---
+
+## 📑 References
+
+1. Genc Hoxha et al., IEEE Xplore, 2020  
+2. Yan Wang et al., IEEE Xplore, 2023  
+3. Nimra et al., IEEE Xplore, 2023  
+4. Sudhakar et al., IEEE Xplore, 2022  
+5. Satish Kumar et al., IEEE Xplore, 2023
+
+---
+
+## 🖥️ Deployment (Optional)
+
+To run locally or in Google Colab:
 
 
-**ARCHITECTURE DIAGRAM**
-<img width="1672" height="809" alt="image" src="https://github.com/user-attachments/assets/cbc3980d-b591-484a-ab67-5a68dca015d6" />
-
-**FLOW DIAGRAM**
-<img width="2023" height="1045" alt="image" src="https://github.com/user-attachments/assets/2303fcd5-e449-4513-af2f-cb4513264039" />
 
 
